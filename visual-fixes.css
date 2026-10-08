@@ -1,7 +1,27 @@
+.deck-viewer {
+  aspect-ratio: auto;
+  min-height: 0;
+}
+
 .deck-slide {
-  padding: 0 !important;
+  position: relative;
+  inset: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  padding: 0;
   object-fit: contain;
   background: #fff;
+}
+
+.deck-slide[hidden] { display: none; }
+
+.deck-controls {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  right: auto;
 }
 
 .steps {
@@ -41,5 +61,5 @@
   .performer.man { display: none; }
   .steps { max-width: none; }
   .section-heading > p { max-width: none; }
-  .deck-viewer { min-height: 0; aspect-ratio: 16 / 9; }
+  .deck-viewer { min-height: 0; aspect-ratio: auto; }
 }
