@@ -1,0 +1,45 @@
+.deck-slide {
+  padding: 0 !important;
+  object-fit: contain;
+  background: #fff;
+}
+
+.steps {
+  max-width: 730px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.performer.woman { left: -140px; }
+.performer.man { right: -125px; }
+
+@media (min-width: 621px) and (max-width: 900px) {
+  .steps { max-width: 700px; }
+  .performer.woman { height: 290px; left: -155px; }
+  .performer.man { height: 290px; right: -160px; }
+}
+
+@media (max-width: 620px) {
+  .participate-inner { padding-top: 55px; }
+  .section-heading {
+    max-width: 69%;
+    min-height: 195px;
+    position: relative;
+    z-index: 2;
+  }
+  .side-performers { z-index: 1; }
+  .performer.woman {
+    display: block;
+    left: auto;
+    right: -7px;
+    top: 45px;
+    bottom: auto;
+    height: 180px;
+    max-height: none;
+    opacity: 1 !important;
+  }
+  .performer.man { display: none; }
+  .steps { max-width: none; }
+  .section-heading > p { max-width: none; }
+  .deck-viewer { min-height: 0; aspect-ratio: 16 / 9; }
+}

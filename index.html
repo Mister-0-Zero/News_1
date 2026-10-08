@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="visual-fixes.css">
 </head>
 <body>
   <header class="masthead">
@@ -83,31 +84,10 @@
     <section class="presentation-section">
       <div class="section-shell presentation-inner">
         <div class="presentation-copy"><span class="eyebrow">Коротко о главном</span><h2>Правила игры<br><em>и весь плейлист</em></h2><p>Собрали этапы конкурса, сроки и всё, что поможет подготовиться к своему выходу.</p><a class="button button-light" href="assets/presentation.pptx" download>Скачать презентацию <span aria-hidden="true">↓</span></a></div>
-        <div class="deck-viewer" aria-label="Встроенная презентация о конкурсе">
-          <div class="deck-slide is-active" data-slide="0" aria-hidden="false">
-            <span class="slide-kicker">ДЕПАРТАМЕНТ ОТДЫХА И КУЛЬТУРНОГО ПРОСВЕЩЕНИЯ</span>
-            <span class="slide-overline">КОНКУРС ТАЛАНТОВ · ОКТЯБРЬ 2026</span>
-            <h3>Так давайте<br><em>же петь!</em></h3>
-            <p>Голоса, которые до сих пор звучали только на созвонах</p>
-            <span class="slide-mic" aria-hidden="true">♫</span>
-            <span class="slide-num">01</span>
-          </div>
-          <div class="deck-slide slide-timeline" data-slide="1" aria-hidden="true" hidden>
-            <span class="slide-overline">ТРИ ШАГА ДО СЦЕНЫ</span>
-            <h3>Пойте. Делитесь.<br><em>Голосуйте.</em></h3>
-            <div class="mini-timeline">
-              <article><b>12—16</b><small>октября 2026</small><strong>Приём работ</strong><span>Песня, название и обложка на example.com. Клип — по желанию. Материалы проходят модерацию.</span></article>
-              <article><b>19—23</b><small>октября 2026</small><strong>Голосование</strong><span>Слушайте прошедшие модерацию работы и голосуйте в разделе конкурса на внутреннем сайте.</span></article>
-            </div>
-            <span class="slide-num">02</span>
-          </div>
-          <div class="deck-slide slide-winner" data-slide="2" aria-hidden="true" hidden>
-            <span class="slide-overline">26 ОКТЯБРЯ 2026</span>
-            <h3>Узнаем,<br><em>кто победил.</em></h3>
-            <p>Результаты появятся на странице конкурса.</p>
-            <div class="slide-prize"><span>✦</span><b>Главный приз</b><strong>Персональная статуэтка победителя с пластинкой и обложкой его победившего трека.</strong></div>
-            <span class="slide-num">03</span>
-          </div>
+        <div class="deck-viewer" aria-label="Оригинальная презентация о конкурсе">
+          <img class="deck-slide is-active" src="assets/slides/Слайд1.PNG" alt="Слайд 1: Так давайте же петь — конкурс для сотрудников" data-slide="0" aria-hidden="false">
+          <img class="deck-slide" src="assets/slides/Слайд2.PNG" alt="Слайд 2: даты приёма работ и голосования" data-slide="1" aria-hidden="true" hidden>
+          <img class="deck-slide" src="assets/slides/Слайд3.PNG" alt="Слайд 3: объявление победителя и главный приз" data-slide="2" aria-hidden="true" hidden>
           <div class="deck-controls"><button class="deck-prev" type="button" aria-label="Предыдущий слайд">←</button><div class="deck-dots" role="tablist" aria-label="Слайды презентации"><button class="is-active" type="button" role="tab" aria-label="Слайд 1" aria-selected="true" data-go="0"></button><button type="button" role="tab" aria-label="Слайд 2" aria-selected="false" data-go="1"></button><button type="button" role="tab" aria-label="Слайд 3" aria-selected="false" data-go="2"></button></div><span class="deck-count"><b>01</b> / 03</span><button class="deck-next" type="button" aria-label="Следующий слайд">→</button></div>
         </div>
       </div>
